@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.deps.json
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.runtimeconfig.json
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.dll
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.pdb
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\Repositories.dll
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\Repositories.pdb
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.csproj.CopyComplete
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.dll
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\refint\DBAssignmentsContext.dll
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.pdb
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\DBAssignmentsContext.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignments\DBAssignmentContext\obj\Debug\net7.0\ref\DBAssignmentsContext.dll

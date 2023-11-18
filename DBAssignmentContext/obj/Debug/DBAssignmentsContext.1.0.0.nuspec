@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DBAssignmentsContext</id>
+    <version>1.0.0</version>
+    <authors>DBAssignmentsContext</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="Repositories" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="7.0.13" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.runtimeconfig.json" target="lib\net7.0\DBAssignmentsContext.runtimeconfig.json" />
+    <file src="C:\Users\User\source\repos\Assignments\DBAssignmentContext\bin\Debug\net7.0\DBAssignmentsContext.dll" target="lib\net7.0\DBAssignmentsContext.dll" />
+  </files>
+</package>
