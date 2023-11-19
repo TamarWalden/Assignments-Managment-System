@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
+using Common;
 using Common.DTOs;
+using Microsoft.Identity.Client;
 using Repositories.Entities;
 using Repositories.Interfaces;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,6 +52,11 @@ namespace Services.Services
             var assignmentsSorted = assignments.OrderBy(a => a.StartDate).ToList();
             var assignmentsDto = mapper.Map<List<AssignmentDto>>(assignmentsSorted);
             return assignmentsDto;
+        }
+        public async Task<List<AssignmentDto>> GetAssignmentsByPageing(GetDataParameters assignmentsParameters)
+        {
+            var assignments= await assignmentRepository.GetAllByPagingAsync(assignmentsParameters);
+            return mapper.Map<List<AssignmentDto>>(assignments);
         }
 
         public async Task<AssignmentDto> GetByIdAsync(int id)

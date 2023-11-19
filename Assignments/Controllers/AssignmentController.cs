@@ -1,6 +1,8 @@
-﻿using Common.DTOs;
+﻿using Common;
+using Common.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Repositories.Interfaces;
 using Services.Interfaces;
 using Services.Services;
 
@@ -43,6 +45,12 @@ namespace Assignments.Controllers
         public async Task<List<AssignmentDto>> GetAssignmentsByDescendingDateOrderAsync()
         {
             return await assignmentService.GetAssignmentsByDescendingDateOrderAsync();
+        }
+
+        [HttpGet]
+        public Task<List<AssignmentDto>> GetOwners([FromQuery] GetDataParameters assignmentsParameters)
+        {
+            return assignmentService.GetAssignmentsByPageing(assignmentsParameters);
         }
 
         [HttpGet]

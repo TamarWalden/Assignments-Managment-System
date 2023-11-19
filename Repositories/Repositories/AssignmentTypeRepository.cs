@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Common;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Entities;
 using Repositories.Interfaces;
 using System;
@@ -29,6 +30,11 @@ namespace Repositories.Repositories
         public async Task<List<AssignmentType>> GetAllAsync()
         {
             return await context.AssignmentsTypes.ToListAsync();
+        }
+
+        public Task<List<AssignmentType>> GetAllByPagingAsync(GetDataParameters getDataParameters)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<AssignmentType> GetByIdAsync(int id)

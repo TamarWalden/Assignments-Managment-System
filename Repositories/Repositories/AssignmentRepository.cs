@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Common;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Repositories.Entities;
 using Repositories.Interfaces;
@@ -46,6 +47,11 @@ namespace Repositories.Repositories
         public async Task<List<Assignment>> GetAllAsync()
         {
             return await context.Assignments.ToListAsync();
+        }
+
+        public async Task<List<Assignment>> GetAllByPagingAsync(GetDataParameters entity)
+        {
+            return await context.Assignments.Skip((entity.PageNumber - 1) * entity.PageSize).Take(entity.PageSize).ToListAsync();
         }
 
         public async Task<Assignment> GetByIdAsync(int id)
