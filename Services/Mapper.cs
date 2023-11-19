@@ -17,9 +17,9 @@ namespace Services
             CreateMap<AssignmentDto, Assignment>().ReverseMap();
             //    .formember(dest => dest.id, opt => opt.ignore());
             //createmap<assignment, assignmentdto>();
-            CreateMap<AssignmentTypeDto, AssignmentType>().ReverseMap();
-            //    .ForMember(dest => dest.Id, opt => opt.Ignore());
-            //CreateMap<AssignmentType, AssignmentTypeDto>();
+            CreateMap<AssignmentTypeDto, AssignmentType>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
+            CreateMap<AssignmentType, AssignmentTypeDto>();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Assignments.Controllers
 
         // POST api/<ValuesController>
         [HttpPost]
-        public async Task CreateNewAssignment(AssignmentDto newAssignment)
+        public async Task AddNewAssignment(AssignmentDto newAssignment)
         {
             try
             {

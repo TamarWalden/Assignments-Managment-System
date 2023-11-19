@@ -11,7 +11,7 @@ namespace Common.DTOs
         public DateTime? EndDate { get; set; }
         public bool IsRecurring { get; set; }
         public bool IsFinished { get; set; }
-        public int AssignmentTypeId {  get; set; }  
+        //public int AssignmentTypeId {  get; set; }  
         public virtual AssignmentTypeDto AssignmentType { get; set; }
     }
 }

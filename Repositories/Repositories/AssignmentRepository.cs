@@ -34,9 +34,13 @@ namespace Repositories.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            var a = await GetByIdAsync(id);
-            context.Assignments.Remove(a);
-            await context.SaveChangesAsync();
+            try
+            {
+                var a = await GetByIdAsync(id);
+                context.Assignments.Remove(a);
+                await context.SaveChangesAsync();
+            }
+            catch(Exception ex) { }
         }
 
         public async Task<List<Assignment>> GetAllAsync()
